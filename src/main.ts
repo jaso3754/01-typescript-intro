@@ -1,10 +1,15 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+// import './topics/01-basic-types';
+// import './topics/02-object-interface';
+import './topics/03-functions';
+import './topics/04-homework-types';
+import './topics/05-basic-destructuring';
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   Hola mundo 
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+console.log("Hola mundo");
+
