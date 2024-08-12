@@ -3,7 +3,7 @@ function classDecorator <T extends { new (...args:any[]): {} }>(
 ) {
     return class extends constructor {
         newProperty = 'New Property';
-        hello = 'Override';
+        hello = 'override';
     }
 }
 
@@ -11,7 +11,7 @@ function classDecorator <T extends { new (...args:any[]): {} }>(
 
 
 @classDecorator
-class SuperClass {
+export class SuperClass {
 
     
     public myProperty: string = 'Abc123';
@@ -22,7 +22,7 @@ class SuperClass {
     }
 }
 
-console.log( SuperClass);
+console.log(SuperClass);
 
 const myClass = new SuperClass();
 console.log( myClass );
